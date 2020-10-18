@@ -16,5 +16,20 @@ namespace DeviceTreeGenerator
         {
             InitializeComponent();
         }
+
+        private void SelectButton_Click(object sender, EventArgs e)
+        {
+            if (openFileDialog1.ShowDialog() == DialogResult.OK)
+            {
+                try
+                {
+                    ImageLocationBox.Text = openFileDialog1.FileName;
+                }
+                catch (Exception ex)
+                {
+
+                }
+            }
+        }
     }
 }

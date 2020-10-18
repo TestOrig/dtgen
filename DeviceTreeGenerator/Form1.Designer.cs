@@ -35,6 +35,7 @@
             this.HeaderLabel = new System.Windows.Forms.Label();
             this.Button1 = new System.Windows.Forms.Button();
             this.ImageLocationBox = new System.Windows.Forms.TextBox();
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.SuspendLayout();
             // 
             // ImageDescriptionLabel
@@ -54,6 +55,7 @@
             this.SelectButton.TabIndex = 14;
             this.SelectButton.Text = "Select";
             this.SelectButton.UseVisualStyleBackColor = true;
+            this.SelectButton.Click += new System.EventHandler(this.SelectButton_Click);
             // 
             // Label4
             // 
@@ -97,6 +99,10 @@
             this.ImageLocationBox.Size = new System.Drawing.Size(100, 20);
             this.ImageLocationBox.TabIndex = 9;
             // 
+            // openFileDialog1
+            // 
+            this.openFileDialog1.FileName = "openFileDialog1";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -109,6 +115,8 @@
             this.Controls.Add(this.HeaderLabel);
             this.Controls.Add(this.Button1);
             this.Controls.Add(this.ImageLocationBox);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             this.Name = "Form1";
             this.Text = "DTGen";
             this.ResumeLayout(false);
@@ -125,6 +133,7 @@
         internal System.Windows.Forms.Label HeaderLabel;
         internal System.Windows.Forms.Button Button1;
         internal System.Windows.Forms.TextBox ImageLocationBox;
+        private System.Windows.Forms.OpenFileDialog openFileDialog1;
     }
 }
 
